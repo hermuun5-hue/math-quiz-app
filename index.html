@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Math Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="quiz">
+    <h2 id="question">12 + 5 = ?</h2>
+
+    <<button onclick="checkAnswer(parseInt(this.innerText))">Answer</button>
+ <button onclick="checkAnswer(parseInt(this.innerText))">Answer</button>
+ <button onclick="checkAnswer(parseInt(this.innerText))">Answer</button>
+  </div>
+
+  <div id="correct" class="hidden">
+    <h1>✅ GOOD JOB!</h1>
+    <button onclick="nextQuestion()">Next</button>
+  </div>
+
+  <div id="wrong" class="hidden">
+    <h1>❌ PLEASE TRY AGAIN!</h1>
+    <button onclick="retry()">Retry</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
